@@ -21,7 +21,6 @@ public class WhaleRaycast : MonoBehaviour
         {
             if (hit.collider.gameObject.GetComponent<isWhale>() != null)
             {
-                Debug.Log("yo");
                 whaleAnimator.SetBool("swimming", true);
             } else
             {

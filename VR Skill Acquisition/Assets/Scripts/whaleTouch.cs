@@ -19,10 +19,11 @@ public class whaleTouch : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
         whaleAnimator.SetBool("moving", true);
+        Debug.Log("yeet");
         //yield return new WaitForSeconds(10);
-        whaleAnimator.SetBool("moving", false);
+        //whaleAnimator.SetBool("moving", false);
     }
 }
