@@ -6,10 +6,7 @@ public class WhaleRaycast : MonoBehaviour
 {
     public GameObject whale;
     Animator whaleAnimator;
-
-    public bool swimming;
-    public bool moving;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -20,22 +17,16 @@ public class WhaleRaycast : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        if (moving = true)
-        {
-            whaleAnimator.SetBool("swimming", true);
-        } else if (Physics.Raycast(transform.position, transform.forward, out hit))
+        if (Physics.Raycast(transform.position, transform.forward, out hit))
         {
             if (hit.collider.gameObject.GetComponent<isWhale>() != null)
             {
+                Debug.Log("yo");
                 whaleAnimator.SetBool("swimming", true);
             } else
             {
                 whaleAnimator.SetBool("swimming", false);
             }
-        }
-        else
-        {
-            whaleAnimator.SetBool("swimming", false);
         }
     }
 }
