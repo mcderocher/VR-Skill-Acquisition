@@ -26,4 +26,13 @@ public class whaleTouch : MonoBehaviour
         //yield return new WaitForSeconds(10);
         //whaleAnimator.SetBool("moving", false);
     }
+
+
+    private void OnTriggerExit(Collider other)
+    {
+        whaleAnimator.SetBool("moving", false);
+        Debug.Log("yeet");
+        //yield return new WaitForSeconds(10);
+        //whaleAnimator.SetBool("moving", false);
+    }
 }
