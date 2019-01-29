@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 2138677392}
-  m_IndirectSpecularColor: {r: 0.28463104, g: 0.37121886, b: 0.49875993, a: 1}
+  m_IndirectSpecularColor: {r: 0.28463084, g: 0.37121835, b: 0.49875888, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -127,6 +127,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Granny
       objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6e1ad1af9b6714945bf8fc9d0430f94b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.43
+      objectReference: {fileID: 0}
+    - target: {fileID: 400000, guid: 6e1ad1af9b6714945bf8fc9d0430f94b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0
+      objectReference: {fileID: 0}
     - target: {fileID: 400060, guid: 6e1ad1af9b6714945bf8fc9d0430f94b, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.21
@@ -187,14 +195,6 @@ PrefabInstance:
       propertyPath: m_Controller
       value: 
       objectReference: {fileID: 9100000, guid: 977045e98d032ad44bc2a74cbac775b6, type: 2}
-    - target: {fileID: 400000, guid: 6e1ad1af9b6714945bf8fc9d0430f94b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1.43
-      objectReference: {fileID: 0}
-    - target: {fileID: 400000, guid: 6e1ad1af9b6714945bf8fc9d0430f94b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e1ad1af9b6714945bf8fc9d0430f94b, type: 3}
 --- !u!1 &254658161 stripped
@@ -329,6 +329,7 @@ GameObject:
   m_Component:
   - component: {fileID: 351611166}
   - component: {fileID: 351611167}
+  - component: {fileID: 351611168}
   m_Layer: 0
   m_Name: XR Rig
   m_TagString: Untagged
@@ -366,6 +367,19 @@ MonoBehaviour:
   m_TrackingSpace: 0
   m_StationaryCameraYOffset: 1.36144
   m_CameraFloorOffsetObject: {fileID: 464695798}
+--- !u!114 &351611168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 351611165}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aab3b540443ece44fa995c09edc368d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 3
 --- !u!1 &424091310
 GameObject:
   m_ObjectHideFlags: 0
