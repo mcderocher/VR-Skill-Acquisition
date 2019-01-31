@@ -1,6 +1,6 @@
 # VR-Skill-Acquisition
 
-Open file only in Unity 2018.3.3
+Open file only in Unity 2018.3
 
 Press the play button at the top of the unity window to start the experience
 
